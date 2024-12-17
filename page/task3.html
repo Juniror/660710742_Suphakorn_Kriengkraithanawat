@@ -5,37 +5,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
+    <style>
+        table,
+        td,
+        th {
+            border: none;
+            text-align: start;
+            vertical-align: top;
+        }
+    </style>
 </head>
 
 <body>
+    <a href="minipage/formtest.html">ไปหาทดสอบ form ต่างๆ</a>
     <form action="acc.php" method="post">
-        <label for="fname">First name </label>
-        <input type="text" name="fname" id="fname"><br>
-        <label for="lname">Last name </label>
-        <input type="text" name="lname" id="lname"><br>
-        <label for="username">Username </label>
-        <input type="text" name="username" id="username"><br>
-        <label for="password">Password</label>
-        <input type="password" name="password" id="password"><br>
-        <label for="password">Address</label><br>
-        <textarea rows="5" cols="20" name="address" id="address"></textarea><br>
-        <input type="radio" name="titlename"> Mr <input type="radio" name="titlename"> Ms <input type="radio"
-            name="titlename"> Miss <br>
-        <input type="checkbox" name="lang1" id="java"> java <input type="checkbox" name="lang2" id="c"> C <input
-            type="checkbox" name="lang3" id="go"> go <br>
-        <select name="product" id="product">
-            <option value="ipad">Ipad</option>
-            <option value="iphone">Iphone</option>
-            <option value="mac">Mac</option>
-        </select><br>
-        <input type="reset"><br>
-        <input type="submit">
-
         <h1>กรอกหนังสือรุ่น</h1>
         <table>
-            
+            <tr>
+                <th><label for="fullName">ชื่อสกุล</label></th>
+                <td><input type="text" name="fullName" id="fullName"></td>
+            </tr>
+            <tr>
+                <th><label for="studentID">หมายเลขประจำตัว</label></th>
+                <td><input type="text" name="studentID" id="studentID"></td>
+            </tr>
+            <tr>
+                <th><label for="yearOfAdmission">ปีที่เข้าการศึกษา</label></th>
+                <td><input type="text" name="yearOfAdmission" id="yearOfAdmission"></td>
+            </tr>
+            <tr>
+                <th><label for="generation">รุ่น</label></th>
+                <td><input type="text" name="generation" id="generation"></td>
+            </tr>
+            <tr>
+                <th><label for="department">แผนก/สาขาวิชา</label></th>
+                <td><input type="text" name="department" id="department"></td>
+            </tr>
+            <tr>
+                <th><label for="activityClub">กิจกรรม/ชมรม</label></th>
+                <td><input type="text" name="activityClub" id="activityClub"></td>
+            </tr>
+            <tr>
+                <th><label for="motto">คติประจำใจ</label></th>
+                <td><input type="text" name="motto" id="motto"></td>
+            </tr>
+            <tr>
+                <th><label for="image">ภาพถ่าย</label></th>
+                <td><input type="file" name="image" id="image"></td>
+            </tr>
+            <tr>
+                <th><label for="message">ข้อความ/คำอวยพร</label></th>
+                <td><textarea rows="5" cols="20" name="message" id="message"></textarea></td>
+            </tr>
+            <tr>
+                <th><label for="contact">ข้อมูลติดต่อ</label></th>
+                <td><textarea rows="5" cols="20" name="contact" id="contact"></textarea></td>
+            </tr>
         </table>
+        <input type="reset">
+        <input type="submit">
     </form>
+    
 </body>
 
 </html>
