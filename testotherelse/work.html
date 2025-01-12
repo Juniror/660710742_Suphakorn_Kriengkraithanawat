@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feet to Meter Converter</title>
+</head>
+<body>
+    <p>Celsious</p> <input type="number" id="input">
+    <p>Farenheit</p> <p id="display"></p>
+    <p>Kelvin</p> <p id="display2"></p>
+</body>
+<script>
+    function cal() {
+ 
+        let num = document.getElementById("input").value;
+      
+            document.getElementById("display").textContent = num * (9/5) + 32;
+          if (num == 0) {
+            document.getElementById("display2").textContent =  273.15;
+          }
+          else{
+            document.getElementById("display2").textContent =  273.15 + parseInt(num);
+          }
+    }
+    document.getElementById("input").addEventListener("input", cal);
+</script>
+</html>

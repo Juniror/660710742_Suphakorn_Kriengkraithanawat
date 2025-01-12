@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cula</title>
+
+    <style>
+        body {
+            background-color: #121212;
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+            height: 100vh; 
+    
+        }
+
+        #inner-background {
+            background-color: #2c2f38; 
+            padding: 20px;
+            border-radius: 15px;
+        }
+
+        #display {
+            background-color: #1c1f22;
+            color: white;
+            font-size: 36px;
+            text-align: right;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+    
+        }
+
+        .buttonlayout {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+
+        .number, .operater , .equal{
+            font-size: 24px;
+            color: black;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .operater , .equal{
+            background-color: green;
+        }
+        .number:active, .operater:active , .equal:active {
+            background: orange; 
+        }
+    </style>
+</head>
+<body>
+    <div id="inner-background">
+        <div id="display">0</div>
+        <div class="buttonlayout">
+            <button type="button" class="number" id="button7">7</button>
+            <button type="button" class="number" id="button8">8</button>
+            <button type="button" class="number" id="button9">9</button>
+            <button type="button" class="operater" id="divide">/</button>
+            <button type="button" class="number" id="button4">4</button>
+            <button type="button" class="number" id="button5">5</button>
+            <button type="button" class="number" id="button6">6</button>
+            <button type="button" class="operater" id="mutiply">*</button>
+            <button type="button" class="number" id="button1">1</button>
+            <button type="button" class="number" id="button2">2</button>
+            <button type="button" class="number" id="button3">3</button>
+            <button type="button" class="operater" id="minus">-</button>    
+            <button type="button" class="number" id="button0">0</button>
+            <button type="button" class="number" id="point">.</button>
+            <button type="button" class="equal" id="equal">=</button>
+            <button type="button" class="operater" id="plus">+</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
